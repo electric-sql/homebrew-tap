@@ -1,4 +1,4 @@
-# Electric-sql tap
+# ElectricSQL homebrew tap
 
 ## How do I install these formulae?
 
