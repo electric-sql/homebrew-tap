@@ -1,8 +1,8 @@
 class Electric < Formula
   desc "CLI tool to interact with ElectricSQL cluster"
   homepage "https://electric-sql.com"
-  url "https://github.com/electric-sql/cli/archive/refs/tags/v0.0.3.tar.gz"
-  sha256 "d2d5780eccfceb09e14baa425a6c2d55ddf55b22aa2b03f324eb08496a3d28ba"
+  url "https://github.com/electric-sql/cli/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "a076e44f65d65693dad53aaa4e9b6febbbb32e67f5a34df8118ddeafacdd2d21"
   license "Apache-2.0"
 
   bottle do
