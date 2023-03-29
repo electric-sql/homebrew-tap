@@ -7,10 +7,10 @@ class Electric < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/electric-sql/tap"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "6ff2714c70290a0dc00735ede885ecf3047020f96d139e64bc60f3a8ba8c026c"
-    sha256 cellar: :any_skip_relocation, monterey:       "84edc04b7e3c7a3a3e6a4c4b25ccc8e766c484ed69edaa27828e99d291055c3b"
-    sha256 cellar: :any_skip_relocation, big_sur:        "c38bfb06400be36901b7eef96921df010914f7c1df5c92dc333af2cf7934544c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "bd330ee3d01d13e5c331d0ba3d5c1eae26a92d3c3e8bf1690e1bec74ba455be3"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "ffe82e62d097b1ebb4713293a49f0ed23ad0523df58db79e7076b6a3acb2e684"
+    sha256 cellar: :any_skip_relocation, monterey:       "219159052f1fedf204ae06d1213f9c5713d185cc68f5205ca626a44852414cb3"
+    sha256 cellar: :any_skip_relocation, big_sur:        "72200c5ba168b0f38c443a37c2214919f19be07396c4616b92f481960a26d8e0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "f138e419634cfbd1860a4b78f4a9a3206a4426a4e9b4fbb1bf1b10f5f87b8a5a"
   end
 
   depends_on "elixir" => :build
