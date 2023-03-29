@@ -22,6 +22,9 @@ jobs:
       - name: Set up git
         uses: Homebrew/actions/git-user-config@master
 
+      - if: inputs.automerge
+        uses: rmacklin/fetch-through-merge-base@v0
+
       - name: Pull bottles
         env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ github.token }}
