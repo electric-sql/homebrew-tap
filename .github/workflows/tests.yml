@@ -44,3 +44,10 @@ jobs:
         with:
           name: bottles
           path: "*.bottle.*"
+  merge:
+    if: github.event.pull_request && contains(github.event.pull_request.labels.*.name, 'automerge')
+    needs: test-bot
+    uses: ./.github/workflows/publish.yml
+    secrets: inherit
+    with:
+      automerge: true

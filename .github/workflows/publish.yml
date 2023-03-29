@@ -3,10 +3,18 @@ on:
   pull_request_target:
     types:
       - labeled
+  workflow_call:
+    inputs:
+      automerge:
+        required: false
+        default: false
+        type: boolean
 jobs:
   pr-pull:
-    if: contains(github.event.pull_request.labels.*.name, 'pr-pull')
+    if: contains(github.event.pull_request.labels.*.name, 'pr-pull') || inputs.automerge
     runs-on: ubuntu-22.04
+    env:
+      HOMEBREW_NO_INSTALL_FROM_API: "1"
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
